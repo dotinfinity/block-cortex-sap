@@ -7,7 +7,7 @@
   elements:
   - title: Total Due Amount
     name: Total Due Amount
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: single_value
     fields: [accountspayable.sum_overdue_amount_conv_drill]
@@ -79,7 +79,7 @@
     height: 2
   - title: Past Due Amount
     name: Past Due Amount
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: single_value
     fields: [accountspayable.sum_overdue_on_past_due_date_conv_drill]
@@ -123,7 +123,7 @@
     height: 2
   - title: Accounts Payable by Vendor
     name: Accounts Payable by Vendor
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_pie
     fields: [accountspayable.name1, accountspayable.sum_overdue_amount_2_conv_drill]
@@ -204,7 +204,7 @@
     height: 5
   - title: Upcoming Payments and Penalties
     name: Upcoming Payments and Penalties
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_bar
     fields: [accountspayable.name1, accountspayable.sum_late_payments_conv_drill,
@@ -362,7 +362,7 @@
     height: 5
   - title: Parked and Blocked Invoices
     name: Parked and Blocked Invoices
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_grid
     fields: [accountspayable.company_text_butxt, accountspayable.blocked_invoice,
@@ -450,7 +450,7 @@
     height: 6
   - title: Accounts Payable Aging
     name: Accounts Payable Aging
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_column
     fields: [accountspayable.Past_Due_Interval, accountspayable.sum_overdue_amount_1_conv_drill]
@@ -547,7 +547,7 @@
     height: 6
   - title: Cash Discount Utilization Trend
     name: Cash Discount Utilization Trend
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable_cdu
     type: looker_line
     fields: [accountspayable_cdu.Cash_Discount_Utilization, accountspayable_cdu.posting_date_in_the_document_budat_month]
@@ -664,7 +664,7 @@
     height: 1
   - title: Accounts Payable Turnover
     name: Accounts Payable Turnover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable_apt
     type: single_value
     fields: [accountspayable_apt.doc_fiscal_period, accountspayable_apt.turnover]
@@ -697,7 +697,7 @@
     height: 2
   - title: Accounts Payable Turnover Trend
     name: Accounts Payable Turnover Trend
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable_apt
     type: looker_line
     fields: [accountspayable_apt.turnover, accountspayable_apt.fiscal_period]
@@ -757,7 +757,7 @@
     height: 6
   - title: DPO Trend
     name: DPO Trend
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: days_payable_outstanding
     type: looker_line
     fields: [days_payable_outstanding.sum_days_payable_outstanding, days_payable_outstanding.Month_Year]
@@ -819,7 +819,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: currency_conversion_new.tcurr
@@ -833,7 +833,7 @@
       type: tag_list
       display: popover
       options: []
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: accountspayable.company_text_butxt
@@ -846,7 +846,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: accountspayable.name1

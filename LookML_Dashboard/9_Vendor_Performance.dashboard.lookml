@@ -7,7 +7,7 @@
   elements:
   - title: Vendor Lead Time
     name: Vendor Lead Time
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_column
     fields: [vendor_performance.name1, vendor_performance.avg_vendor_cycle_time_in_days]
@@ -104,7 +104,7 @@
     height: 6
   - title: On-time Delivery
     name: On-time Delivery
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.Vendor_Ontime]
@@ -144,7 +144,7 @@
     height: 2
   - title: Invoice Accuracy
     name: Invoice Accuracy
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.Invoice_Accuracy]
@@ -180,7 +180,7 @@
     height: 2
   - title: Rejection Rate
     name: Rejection Rate
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.Rejection_rate]
@@ -215,7 +215,7 @@
     height: 2
   - title: Delivery Performance by Top Vendors
     name: Delivery Performance by Top Vendors
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_column
     fields: [vendor_performance.name1, vendor_performance.Vendor_Ontime_vendor, vendor_performance.Infull_rate_vendor,
@@ -293,7 +293,7 @@
     height: 6
   - title: Purchase Price Variance
     name: Purchase Price Variance
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_column
     fields: [vendor_performance.name1, vendor_performance.sum_Standard_Price_global_currency,
@@ -385,7 +385,7 @@
     height: 6
   - title: Purchase Order Status
     name: Purchase Order Status
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_column
     fields: [vendor_performance.name1, vendor_performance.count_past_due, vendor_performance.open]
@@ -487,7 +487,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.purchasing_document_date_bedat_date
@@ -500,7 +500,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: currency_conversion_new.tcurr
@@ -513,7 +513,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.company_text_butxt
@@ -526,7 +526,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.purchasing_organization_text_ekotx
@@ -539,7 +539,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.purchasing_group_text_eknam
@@ -552,7 +552,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.country_key_land1
@@ -565,7 +565,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.name1

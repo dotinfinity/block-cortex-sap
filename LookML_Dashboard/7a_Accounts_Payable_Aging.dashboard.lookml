@@ -8,7 +8,7 @@
   elements:
   - title: Accounts Payable Aging Detailed Report
     name: Accounts Payable Aging Detailed Report
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_grid
     fields: [accountspayable.company_code_bukrs, accountspayable.company_text_butxt,
@@ -152,7 +152,7 @@
     height: 8
   - title: Accounts Payable Aging by Vendor
     name: Accounts Payable Aging by Vendor
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_bar
     fields: [accountspayable.name1, accountspayable.outstanding_but_not_overdue_1_conv_drill,
@@ -249,7 +249,7 @@
     height: 7
   - title: Accounts Payable Aging
     name: Accounts Payable Aging
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     type: looker_column
     fields: [accountspayable.Past_Due_Interval, accountspayable.sum_overdue_amount_1_conv_drill]
@@ -354,7 +354,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: currency_conversion_new.tcurr
@@ -367,7 +367,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: accountspayable.company_text_butxt
@@ -380,7 +380,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: accountspayable.name1
@@ -393,7 +393,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: accountspayable
     listens_to_filters: []
     field: accountspayable.account_number_of_vendor_or_creditor_lifnr

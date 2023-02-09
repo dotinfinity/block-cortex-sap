@@ -7,7 +7,7 @@
   elements:
   - title: Active Vendors
     name: Active Vendors
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.Active_Vendor_1]
@@ -73,7 +73,7 @@
     height: 2
   - title: Cleared Invoices
     name: Cleared Invoices
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.invoice_count]
@@ -115,7 +115,7 @@
     height: 2
   - title: Total Spend
     name: Total Spend
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: single_value
     fields: [vendor_performance.total_spend_global_curr]
@@ -155,7 +155,7 @@
     height: 2
   - title: Spend by Purchasing Organization
     name: Spend by Purchasing Organization
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_pie
     fields: [vendor_performance.purchasing_organization_text_ekotx, vendor_performance.sum_spend_by_purchase_org_global_curr]
@@ -193,7 +193,7 @@
     height: 5
   - title: Spend by Purchasing Group
     name: Spend by Purchasing Group
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_pie
     fields: [vendor_performance.purchasing_group_text_eknam, vendor_performance.sum_spend_by_purchase_grp_global_curr]
@@ -231,7 +231,7 @@
     height: 5
   - title: Spend by Vendor Country
     name: Spend by Vendor Country
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_pie
     fields: [vendor_performance.country_key_land1, vendor_performance.sum_spend_by_country_global_curr]
@@ -270,7 +270,7 @@
     height: 5
   - title: Total Spend Trend
     name: Total Spend Trend
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_area
     fields: [vendor_performance.Invoice_date_month, vendor_performance.sum_spend_by_month_global_currency]
@@ -354,7 +354,7 @@
     height: 5
   - title: Spend by Top  Vendors
     name: Spend by Top  Vendors
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_bar
     fields: [vendor_performance.name1, vendor_performance.sum_spend_by_vendor_globalcurr]
@@ -430,7 +430,7 @@
     height: 5
   - title: Spend by Material Type
     name: Spend by Material Type
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     type: looker_column
     fields: [material_types_md.description_of_material_type_mtbez, vendor_performance.sum_spend_by_material_type_global_curr]
@@ -559,7 +559,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.Invoice_date_date
@@ -572,7 +572,7 @@
     ui_config:
       type: dropdown_menu
       display: inline
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: currency_conversion_new.tcurr
@@ -585,7 +585,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: []
     field: vendor_performance.company_text_butxt
@@ -598,7 +598,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: [Company Code]
     field: vendor_performance.purchasing_organization_text_ekotx
@@ -611,7 +611,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: [Purchasing Organization]
     field: vendor_performance.purchasing_group_text_eknam
@@ -624,7 +624,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: [Purchasing Group]
     field: vendor_performance.country_key_land1
@@ -637,7 +637,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: cortex_sap_operational
+    model: cortex_sap_powermax
     explore: vendor_performance
     listens_to_filters: [Vendor Country]
     field: vendor_performance.name1
