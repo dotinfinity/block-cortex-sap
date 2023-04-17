@@ -103,6 +103,8 @@ view: vendor_performance {
     hidden: no
   }
 
+  ## New approach Feb 2023
+
   dimension: language_key {
     type: string
     sql: ${TABLE}.LanguageKey_SPRAS ;;
@@ -362,15 +364,12 @@ view: vendor_performance {
     hidden: no
   }
 
-
   measure: sum_invoice_amount_in_target_currency {
     type: sum
     sql: ${invoice_amount_in_target_currency} ;;
     value_format_name: Greek_Number_Format
     hidden: no
   }
-
-  #####################################Spend by Top Vendors####################################################
 
   measure: sum_invoice_amount_in_target_currency_by_top_vendor {
     type: sum
@@ -382,7 +381,6 @@ view: vendor_performance {
     }
     hidden: no
   }
-  ################################### End of TC aggregation ##########################
 
   dimension: invoice_quantity {
     type: number
@@ -430,17 +428,13 @@ view: vendor_performance {
     sql: ${name1} ;;
     hidden: no
   }
-
-  ######################## Total Vendors Count ####################################
-
+  
   dimension: net_order_valuein_pocurrency_netwr {
     type: number
     sql: ${TABLE}.NetOrderValueinPOCurrency_NETWR ;;
     value_format_name: Greek_Number_Format
     hidden: no
   }
-
-
 
   dimension: number_of_material_document_belnr {
     type: string
@@ -612,11 +606,6 @@ view: vendor_performance {
     filters: [vendor_on_time_in_full_delivery: "OTIF, NotOTIF"]
   }
 
-  # dimension: vendor_quality {
-  #   type: string
-  #   sql: ${TABLE}.VendorQuality ;;
-  # }
-
   measure: count {
     type: count
   }
@@ -639,8 +628,6 @@ view: vendor_performance {
     type: number
     sql: ${TABLE}.InvoiceAmountInSourceCurrency ;;
   }
-
-######################################## invoice amount currency conversion  #################################
 
   dimension: invoice_amount_in_source_currency {
     type: number
@@ -724,7 +711,6 @@ view: vendor_performance {
     sql: ${invoice_amount_in_source_currency} ;;
     value_format_name: Greek_Number_Format
   }
-
 
   measure: sum_spend_by_purchase_org_1 {
     type: sum
@@ -946,7 +932,6 @@ view: vendor_performance {
 
 
   ###################### Purchase variance currency conversion ###########
-
 
   dimension: Invoice_status {
     type: string
